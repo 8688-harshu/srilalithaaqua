@@ -3,236 +3,442 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sri Lalitha Aqua offers innovative aquaculture solutions for enhanced productivity and sustainability.">
-  <meta name="keywords" content="aquaculture, aerators, gear boxes, motors, Sri Lalitha Aqua">
+  <meta name="description" content="Sri Lalitha Aqua - High-efficiency aquaculture engineering, weightless aerator hydrodynamics, high-torque motors, and precision gear systems.">
+  <meta name="keywords" content="Sri Lalitha Aqua, aquaculture aerators, paddle aerators, submersible motors, aquaculture gearboxes, Bhimavaram">
   <meta name="author" content="Sri Lalitha Aqua">
-  <meta property="og:title" content="Sri Lalitha Aqua - Home">
-  <meta property="og:description" content="Explore innovative aquaculture solutions at Sri Lalitha Aqua.">
-  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Sri+Lalitha+Aqua">
-  <meta property="og:url" content="https://www.srilalithaaqua.com">
-  <title>Sri Lalitha Aqua - Home</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <style>
-    @keyframes flowIn {
-      0% { transform: translateY(100px) scale(0.9); opacity: 0; }
-      100% { transform: translateY(0) scale(1); opacity: 1; }
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-    }
-    @keyframes wave {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
-    }
-    .animate-flow-in { animation: flowIn 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
-    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
-    .animate-wave { animation: wave 4s ease-in-out infinite; }
-    .organic-shape {
-      clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
-      transition: transform 0.5s ease, opacity 0.5s ease;
-    }
-    .organic-shape:hover {
-      transform: perspective(1000px) rotateX(5deg) rotateY(5deg) scale(1.05);
-    }
-    .btn-ripple::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
-      border-radius: 50%;
-      transform: scale(0);
-      animation: ripple 0.8s linear;
-    }
-    .btn-ripple:hover::after {
-      animation: none;
-    }
-    .nav-circle {
-      clip-path: circle(0% at 100% 0);
-      transition: clip-path 0.5s ease-in-out;
-    }
-    .nav-circle.active {
-      clip-path: circle(100% at 100% 0);
-    }
-    .wave-divider {
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 100%;
-      height: 50px;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0v27.35a600.21,600.21,0,0,0,321.39,29.09Z' fill='%231E3A8A'/%3E%3C/svg%3E") no-repeat center bottom;
-      background-size: cover;
-    }
-    .glass-effect {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-  </style>
+  <title>Sri Lalitha Aqua | Modern Aquaculture Engineering</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="font-inter bg-gradient-to-b from-[#E0F2FE] to-[#F3F4F6] text-[#1E3A8A] min-h-screen overflow-x-hidden">
-  <header class="bg-gradient-to-r from-[#1E3A8A] to-[#38BDF8] text-white p-6 flex justify-between items-center sticky top-0 z-50">
-    <div class="flex items-center transform hover:scale-105 transition duration-300 animate-wave">
-     <img src="logo.png" alt="Sri Lalitha Aqua Logo" class="h-24">
-    </div>
-    <i class="fas fa-bars text-2xl cursor-pointer md:hidden hover:scale-110 transition duration-300" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false"></i>
-    <nav class="hidden md:flex items-center gap-4">
-      <a href="index.html" class="px-6 py-3 rounded-full text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] font-semibold transition duration-300 relative btn-ripple font-playfair">Home</a>
-      <a href="about.html" class="px-6 py-3 rounded-full text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] font-semibold transition duration-300 relative btn-ripple font-playfair">About Us</a>
-      <a href="products.html" class="px-6 py-3 rounded-full text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] font-semibold transition duration-300 relative btn-ripple font-playfair">Products</a>
-      <a href="dealer.html" class="px-6 py-3 rounded-full text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] font-semibold transition duration-300 relative btn-ripple font-playfair">Dealer Locator</a>
-      <a href="contact.html" class="px-6 py-3 rounded-full text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] font-semibold transition duration-300 relative btn-ripple font-playfair">Contact</a>
-    </nav>
-    <nav class="md:hidden fixed inset-0 bg-[#1E3A8A] p-6 z-50 nav-circle" id="mobileNav">
-      <i class="fas fa-times text-white text-2xl cursor-pointer hover:scale-110 transition duration-300 absolute top-6 right-6" onclick="toggleMenu()"></i>
-      <div class="flex flex-col gap-6 mt-16 items-center">
-        <a href="index.html" class="px-6 py-3 text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] rounded-full font-semibold transition duration-300 font-playfair text-lg">Home</a>
-        <a href="about.html" class="px-6 py-3 text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] rounded-full font-semibold transition duration-300 font-playfair text-lg">About Us</a>
-        <a href="products.html" class="px-6 py-3 text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] rounded-full font-semibold transition duration-300 font-playfair text-lg">Products</a>
-        <a href="dealer.html" class="px-6 py-3 text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] rounded-full font-semibold transition duration-300 font-playfair text-lg">Dealer Locator</a>
-        <a href="contact.html" class="px-6 py-3 text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] rounded-full font-semibold transition duration-300 font-playfair text-lg">Contact</a>
+<body>
+
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-graphic">
+        <div class="water-droplet-ring"></div>
+        <img src="assets/images/logo.png" alt="Sri Lalitha Aqua" class="preloader-logo">
       </div>
-    </nav>
+      <div class="preloader-title">Sri Lalitha Aqua</div>
+      <div class="preloader-status">
+        <span id="preloaderStatusText">INITIALIZING HYDRODYNAMICS</span>
+        <span id="preloaderCounter">0%</span>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill" id="preloaderBarFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-wrap" aria-label="Sri Lalitha Aqua Home">
+        <img src="assets/images/logo.png" alt="Sri Lalitha Aqua Logo" class="brand-logo">
+        <div class="brand-text-wrap">
+          <span class="brand-title">Sri Lalitha Aqua</span>
+          <span class="brand-subtitle">Aquaculture Engineering</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="dealer.html" class="nav-link">Dealer Locator</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary">
+          <span>Get a Quote</span>
+          <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i>
+        </a>
+      </div>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="dealer.html" class="nav-link">Dealer Locator</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div style="padding-top: 0.5rem;">
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Contact Engineering</a>
+      </div>
+    </div>
   </header>
 
-  <div class="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-center text-white overflow-hidden">
-    <canvas id="hero3D" class="absolute inset-0 z-0"></canvas>
-    <div class="absolute inset-0 bg-gradient-to-b from-[#1E3A8A] to-transparent opacity-60 z-10"></div>
-    <div class="relative z-20 max-w-4xl p-8 animate-flow-in">
-      <h2 class="text-5xl md:text-7xl font-bold font-playfair mb-6 text-shadow-lg">Innovate. Sustain. Thrive.</h2>
-      <p class="text-xl md:text-3xl mb-8 font-inter">Premium aquaculture solutions for a healthier planet.</p>
-      <a href="products.html" class="inline-block px-10 py-4 bg-[#F59E0B] text-[#1E3A8A] rounded-full font-semibold text-lg font-playfair relative btn-ripple animate-pulse">Explore Now</a>
-    </div>
-    <div class="wave-divider z-20"></div>
-  </div>
+  <main>
+    
+    <section class="hero-section">
+      <div class="hero-container">
+        
+        <div class="hero-copy-column">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>NEXT-GEN AQUACULTURE SYSTEMS</span>
+          </div>
 
-  <div class="relative max-w-7xl mx-auto p-8">
-    <section class="relative text-center animate-flow-in organic-shape glass-effect p-8">
-      <h2 class="text-4xl font-bold text-[#1E3A8A] mb-6 font-playfair">Our Commitment</h2>
-      <p class="text-lg text-gray-700 max-w-3xl mx-auto font-inter">Empowering aquaculture with innovative, eco-friendly solutions for maximum productivity and sustainability.</p>
-    </section>
+          <h1 class="hero-title">
+            <span class="hero-line-mask"><span class="hero-word-reveal delay-1">Innovate.</span></span>
+            <span class="hero-line-mask"><span class="hero-word-reveal delay-2">Sustain.</span></span>
+            <span class="hero-line-mask"><span class="hero-word-reveal delay-3 highlight">Thrive.</span></span>
+          </h1>
 
-    <section class="relative mt-16">
-      <h2 class="text-center text-4xl font-bold text-[#1E3A8A] mb-12 font-playfair">Featured Products</h2>
-      <div class="relative flex flex-wrap justify-center gap-12">
-        <div class="relative w-80 glass-effect rounded-full p-8 organic-shape animate-flow-in z-10" style="transform: rotate(-3deg);">
-          <img src="premium-aerator.jpg" alt="Premium Aerator" class="w-full h-48 object-cover rounded-full animate-wave">
-          <div class="p-6 text-center">
-            <h3 class="text-xl font-semibold text-[#1E3A8A] font-playfair">Premium Aerator</h3>
-            <p class="text-sm text-gray-700 font-inter">Maximize water oxygenation.</p>
-            <a href="products.html" class="block mt-4 px-8 py-3 bg-[#38BDF8] text-white rounded-full font-semibold font-playfair relative btn-ripple animate-pulse">Learn More</a>
+          <p class="hero-subtitle">
+            Premium aquaculture engineering designed for effortless water circulation, maximized dissolved oxygen, and industry-leading energy efficiency.
+          </p>
+
+          <div class="hero-actions">
+            <a href="products.html" class="btn btn-primary" style="padding: 0.85rem 2rem; font-size: 1rem;">
+              <span>Explore Systems</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="about.html" class="btn btn-secondary" style="padding: 0.85rem 1.8rem; font-size: 1rem;">
+              <span>Our Engineering</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="99.8" data-decimals="1" data-suffix="%">0.0%</span>
+              <span class="stat-label">Oxygen Efficiency</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="5000" data-decimals="0" data-suffix="+">0+</span>
+              <span class="stat-label">Farms Powered</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="40" data-decimals="0" data-suffix="%">0%</span>
+              <span class="stat-label">Power Savings</span>
+            </div>
           </div>
         </div>
-        <div class="relative w-80 glass-effect rounded-full p-8 organic-shape animate-flow-in z-20" style="transform: rotate(3deg) translateY(30px);">
-          <img src="lalitha-motor.jpg" alt="Lalitha Motor" class="w-full h-48 object-cover rounded-full animate-wave">
-          <div class="p-6 text-center">
-            <h3 class="text-xl font-semibold text-[#1E3A8A] font-playfair">Lalitha Motor</h3>
-            <p class="text-sm text-gray-700 font-inter">Energy-efficient and reliable.</p>
-            <a href="products.html" class="block mt-4 px-8 py-3 bg-[#38BDF8] text-white rounded-full font-semibold font-playfair relative btn-ripple animate-pulse">Learn More</a>
-          </div>
-        </div>
-        <div class="relative w-80 glass-effect rounded-full p-8 organic-shape animate-flow-in z-30" style="transform: rotate(-2deg) translateY(60px);">
-          <img src="gishnu-gear-box.jpg" alt="Gishnu Gear Box" class="w-full h-48 object-cover rounded-full animate-wave">
-          <div class="p-6 text-center">
-            <h3 class="text-xl font-semibold text-[#1E3A8A] font-playfair">Gishnu Gear Box</h3>
-            <p class="text-sm text-gray-700 font-inter">Seamless system performance.</p>
-            <a href="products.html" class="block mt-4 px-8 py-3 bg-[#38BDF8] text-white rounded-full font-semibold font-playfair relative btn-ripple animate-pulse">Learn More</a>
+
+        <div class="hero-visual-stage fade-up">
+          <div class="hero-product-card">
+            
+            <div class="floating-spec spec-top-right">
+              <div class="spec-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <div>
+                <div class="spec-text-title">100% Copper Core</div>
+                <div class="spec-text-sub">Continuous Duty Motor</div>
+              </div>
+            </div>
+
+            <div class="hero-image-wrap">
+              <img src="assets/images/premium-aerator.jpg" alt="Sri Lalitha Aqua Flagship Aerator" class="hero-image">
+            </div>
+
+            <div style="margin-top: 1.25rem; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <h3 style="font-size: 1.15rem; font-weight: 700;">Premium Aerator PA-100</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Industrial 4-Paddle Hydrodynamic Configuration</p>
+              </div>
+              <span class="spec-tag" style="background: var(--bg-ice); color: var(--accent-blue); font-weight: 600;">Flagship</span>
+            </div>
+
+            <div class="floating-spec spec-bottom-left">
+              <div class="spec-icon" style="color: var(--accent-green); background: #ecfdf5;">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div>
+                <div class="spec-text-title">SS-304 Marine Frame</div>
+                <div class="spec-text-sub">Zero Saltwater Corrosion</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="wave-divider"></div>
+
+      <canvas id="heroWaveCanvas"></canvas>
     </section>
+
+    <section class="section" id="featured-products">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-tag">Engineering Lineup</span>
+          <h2 class="section-title">Signature Product Suite</h2>
+          <p class="section-desc">
+            Tested and proven across India's largest shrimp and fish farming regions. Built for high durability, zero maintenance downtime, and optimal fluid transfer.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          
+          <article class="product-card fade-up">
+            <div class="product-media">
+              <span class="product-badge-pill">Aerators</span>
+              <img src="assets/images/premium-aerator.jpg" alt="Sri Lalitha Aqua Premium Aerator" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Premium Aerator</h3>
+              <p class="product-desc">
+                Engineered with scientifically balanced curve paddles to produce high-velocity oxygen dissolution and continuous circular bottom pond currents.
+              </p>
+              <div class="product-specs-list">
+                <span class="spec-tag">2.0 HP Capacity</span>
+                <span class="spec-tag">SS304 Drive Shaft</span>
+                <span class="spec-tag">UV Stabilized</span>
+              </div>
+              <div class="product-card-footer">
+                <a href="products.html" class="link-learn-more">
+                  <span>Learn More</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="btn btn-secondary trigger-inquiry-btn" data-product="Premium Aerator" style="padding: 0.45rem 0.95rem; font-size: 0.85rem;">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card fade-up">
+            <div class="product-media">
+              <span class="product-badge-pill">Motors</span>
+              <img src="assets/images/lalitha-motor.jpg" alt="Lalitha High-Torque Motor" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Lalitha Motor</h3>
+              <p class="product-desc">
+                Submersible heavy-duty electric motor featuring pure electrolytic copper winding, robust thermal cutoff, and resistance against coastal voltage drops.
+              </p>
+              <div class="product-specs-list">
+                <span class="spec-tag">Copper Windings</span>
+                <span class="spec-tag">Thermal Overload Cut</span>
+                <span class="spec-tag">IP68 Sealed</span>
+              </div>
+              <div class="product-card-footer">
+                <a href="products.html" class="link-learn-more">
+                  <span>Learn More</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="btn btn-secondary trigger-inquiry-btn" data-product="Lalitha Motor" style="padding: 0.45rem 0.95rem; font-size: 0.85rem;">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card fade-up">
+            <div class="product-media">
+              <span class="product-badge-pill">Gearboxes</span>
+              <img src="assets/images/gishnu-gear-box.jpg" alt="Gishnu Helical Gear Box" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Gishnu Gear Box</h3>
+              <p class="product-desc">
+                Precision-machined helical bevel gearing encased in a rigid cast iron housing. Delivers maximum torque transfer with minimal thermal loss and zero oil leakage.
+              </p>
+              <div class="product-specs-list">
+                <span class="spec-tag">14:1 Ratio</span>
+                <span class="spec-tag">Synthetic Dual Seals</span>
+                <span class="spec-tag">Anti-Wear Alloys</span>
+              </div>
+              <div class="product-card-footer">
+                <a href="products.html" class="link-learn-more">
+                  <span>Learn More</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="btn btn-secondary trigger-inquiry-btn" data-product="Gishnu Gear Box" style="padding: 0.45rem 0.95rem; font-size: 0.85rem;">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;" class="fade-up">
+          <a href="products.html" class="btn btn-secondary" style="padding: 0.85rem 2.25rem;">
+            <span>View Full Technical Catalog (7 Models)</span>
+            <i class="fas fa-grid-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-tag">High-Tech Engineering</span>
+          <h2 class="section-title">Engineered for Water-Tech Precision</h2>
+          <p class="section-desc">
+            We bridge industrial precision with sustainable aquaculture to eliminate equipment failure during critical harvest cycles.
+          </p>
+        </div>
+
+        <div class="engineering-grid">
+          <div class="engineering-card fade-up">
+            <div class="card-icon-box">
+              <i class="fas fa-water"></i>
+            </div>
+            <h3 class="card-title">Hydrodynamic Lift</h3>
+            <p class="card-desc">
+              Custom curved blade geometry creates an effortless upward vortex, displacing deep pond strata with negligible motor friction and lower electrical load.
+            </p>
+          </div>
+
+          <div class="engineering-card fade-up">
+            <div class="card-icon-box">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <h3 class="card-title">Anti-Corrosion Metallurgy</h3>
+            <p class="card-desc">
+              All submerged bolts, shafts, and bracket components are crafted from high-tensile SS-304 and marine nylon to withstand hyper-saline coastal ponds.
+            </p>
+          </div>
+
+          <div class="engineering-card fade-up">
+            <div class="card-icon-box">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 class="card-title">Energy Frugality</h3>
+            <p class="card-desc">
+              Optimized motor-gearbox coupling ensures higher RPM transfer per kilowatt consumed, shaving up to 40% off monthly diesel and grid electricity bills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner fade-up">
+          <div>
+            <h2>Empower Your Pond Operations</h2>
+            <p>
+              Connect with our Bhimavaram engineering headquarters for custom pond layout calculations, bulk dealer allocations, or immediate equipment dispatch.
+            </p>
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="dealer.html" class="btn btn-primary">Find a Local Dealer</a>
+            <a href="contact.html" class="btn btn-secondary" style="background: transparent; color: #fff; border-color: rgba(255,255,255,0.3);">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="inquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close dialog">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div style="margin-bottom: 1.5rem;">
+        <span class="section-tag" style="font-size: 0.75rem; margin-bottom: 0.5rem;">Product Inquiry</span>
+        <h3 id="modalHeading" style="font-size: 1.6rem; color: var(--text-primary);">Request Technical Quote</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">Speak directly with our technical team in Bhimavaram.</p>
+      </div>
+
+      <form data-ajax-form>
+        <div class="form-group">
+          <label class="form-label">Target Equipment</label>
+          <input type="text" class="form-control" id="modalProduct" readonly value="Premium Aerator PA-100">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Full Name / Farm Identity</label>
+          <input type="text" class="form-control" placeholder="e.g. Ramesh Aqua Farms" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Contact Phone / WhatsApp Number</label>
+          <input type="tel" class="form-control" placeholder="+91 95533 33173" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Requirements or Acreage Details</label>
+          <textarea class="form-control" rows="3" placeholder="Specify quantity, pond acreage, or target delivery location..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.85rem;">
+          <span>Submit Request</span>
+          <i class="fas fa-paper-plane" style="font-size: 0.85rem;"></i>
+        </button>
+      </form>
+    </div>
   </div>
 
-  <footer class="bg-gradient-to-r from-[#1E3A8A] to-[#38BDF8] text-white p-8 relative">
-    
-    <div class="text-center mt-6 pt-6 border-t border-white border-opacity-20">
-      <p class="text-sm font-inter">© 2025 Sri Lalitha Aqua. All Rights Reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-wrap">
+            <img src="assets/images/logo.png" alt="Sri Lalitha Aqua Emblem" class="brand-logo" style="filter: brightness(1.2);">
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="color: #ffffff;">Sri Lalitha Aqua</span>
+              <span class="brand-subtitle" style="color: var(--accent-blue);">Aquaculture Engineering</span>
+            </div>
+          </div>
+          <p>
+            Delivering modern, robust aquaculture engineering solutions. Trusted across India's aquaculture belt for reliability, power savings, and high-yield aeration.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://facebook.com/srilalithaaqua" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/srilalithaaqua" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://youtube.com/srilalithaaqua" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://linkedin.com/company/srilalithaaqua" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us &amp; Mission</a></li>
+            <li><a href="products.html">Product Lineup</a></li>
+            <li><a href="dealer.html">Authorized Dealers</a></li>
+            <li><a href="contact.html">Contact &amp; Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Equipment</h4>
+          <ul class="footer-links">
+            <li><a href="products.html">Premium Aerator</a></li>
+            <li><a href="products.html">Best Quality Aerator</a></li>
+            <li><a href="products.html">2-Peddle Aerator</a></li>
+            <li><a href="products.html">Lalitha Motor</a></li>
+            <li><a href="products.html">Gishnu Gear Box</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Headquarters</h4>
+          <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6; margin-bottom: 0.75rem;">
+            Sri Lalitha Aqua, Near SRKR College,<br>
+            Bhimavaram, Andhra Pradesh, India.
+          </p>
+          <p style="color: #94a3b8; font-size: 0.92rem;">
+            <i class="fas fa-phone" style="color: var(--accent-blue); margin-right: 0.4rem;"></i>
+            +91 95533 33173 / +91 88977 03778
+          </p>
+          <p style="color: #94a3b8; font-size: 0.92rem; margin-top: 0.4rem;">
+            <i class="fas fa-envelope" style="color: var(--accent-blue); margin-right: 0.4rem;"></i>
+            srilalithaaqua9@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sri Lalitha Aqua. All Rights Reserved. Innovate. Sustain. Thrive.</p>
+        <p style="color: #64748b;">Precision Water Engineering Systems</p>
+      </div>
     </div>
   </footer>
 
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById('mobileNav');
-      nav.classList.toggle('active');
-      const hamburger = document.querySelector('.fa-bars');
-      hamburger.classList.toggle('fa-times');
-      hamburger.setAttribute('aria-expanded', nav.classList.contains('active'));
-    }
-
-    function handleNewsletter(event) {
-      event.preventDefault();
-      alert('Subscribed to newsletter!');
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-flow-in');
-        }
-      });
-    }, { threshold: 0.3 });
-
-    document.querySelectorAll('section, .organic-shape').forEach(el => observer.observe(el));
-
-    // Enhanced hero 3D particle wave effect
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('hero3D'), alpha: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    const particlesGeometry = new THREE.BufferGeometry();
-    const particlesCount = 1000;
-    const posArray = new Float32Array(particlesCount * 3);
-    for (let i = 0; i < particlesCount * 3; i += 3) {
-      posArray[i] = (Math.random() - 0.5) * 10;
-      posArray[i + 1] = (Math.random() - 0.5) * 10;
-      posArray[i + 2] = (Math.random() - 0.5) * 10;
-    }
-    particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-    const material = new THREE.PointsMaterial({
-      color: 0x38BDF8,
-      size: 0.05,
-      transparent: true,
-      opacity: 0.8
-    });
-    const particles = new THREE.Points(particlesGeometry, material);
-    scene.add(particles);
-    const light = new THREE.PointLight(0xffffff, 1, 100);
-    light.position.set(5, 5, 5);
-    scene.add(light);
-    camera.position.z = 5;
-    function animateHero() {
-      requestAnimationFrame(animateHero);
-      const time = Date.now() * 0.001;
-      const positions = particlesGeometry.attributes.position.array;
-      for (let i = 0; i < positions.length; i += 3) {
-        positions[i + 1] = Math.sin(positions[i] + time) * 2;
-      }
-      particlesGeometry.attributes.position.needsUpdate = true;
-      particles.rotation.y += 0.001;
-      renderer.render(scene, camera);
-    }
-    animateHero();
-
-    // Swipe gesture for mobile
-    let touchstartX = 0;
-    let touchendX = 0;
-    document.addEventListener('touchstart', e => {
-      touchstartX = e.changedTouches[0].screenX;
-    });
-    document.addEventListener('touchend', e => {
-      touchendX = e.changedTouches[0].screenX;
-      if (touchendX < touchstartX - 50) {
-        document.querySelector('.organic-shape:nth-child(2)').scrollIntoView({ behavior: 'smooth' });
-      }
-      if (touchendX > touchstartX + 50) {
-        document.querySelector('.organic-shape:nth-child(1)').scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  </script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

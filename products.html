@@ -3,273 +3,378 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sri Lalitha Aqua - Products</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <style>
-    @keyframes flowIn {
-      0% { transform: translateY(50px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-    .animate-flow-in { animation: flowIn 1.2s ease-out forwards; }
-    .organic-card {
-      transition: transform 0.5s ease, opacity 0.5s ease;
-    }
-    .organic-card:hover {
-      transform: perspective(1000px) rotateX(3deg) rotateY(3deg) scale(1.1);
-    }
-    .btn-ripple::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.3);
-      border-radius: 9999px;
-      transform: scale(0);
-      animation: ripple 0.6s linear;
-    }
-    .btn-ripple:hover::after {
-      animation: none;
-    }
-    .header {
-      display: flex;
-      align-items: center;
-    }
-    .logo {
-      max-width: 20%; /* Fits within header */
-      height: auto;
-    }
-    .nav-slide-in {
-      clip-path: circle(0% at 100% 0);
-      transition: clip-path 0.5s ease-in-out;
-    }
-    .nav-slide-in.active {
-      clip-path: circle(100% at 100% 0);
-    }
-  </style>
+  <meta name="description" content="Explore Sri Lalitha Aqua's industrial aquaculture catalog: paddle aerators, submersible motors, and helical bevel gearboxes.">
+  <meta name="keywords" content="aquaculture products, aerators, motors, gearboxes, Sri Lalitha Aqua, Bhimavaram">
+  <meta name="author" content="Sri Lalitha Aqua">
+  <title>Products Catalog | Sri Lalitha Aqua - Modern Aquaculture Systems</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="font-inter bg-[#E0F2FE] text-[#1E3A8A] min-h-screen">
-  <header class="bg-gradient-to-r from-[#1E3A8A] to-[#38BDF8] text-white p-6 flex justify-between items-center sticky top-0 z-50">
-    <div class="flex items-center transform hover:scale-105 transition duration-300">
-      <img src="logo.png" alt="Sri Lalitha Aqua Logo" class="logo">
-    </div>
-    <i class="fas fa-bars text-xl cursor-pointer md:hidden hover:rotate-90 transition duration-300" onclick="toggleMenu()"></i>
-    <nav class="hidden md:flex items-center gap-4">
-      <a href="index.html" class="px-4 py-2 rounded-full text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] font-semibold transition duration-300 relative btn-ripple">Home</a>
-      <a href="about.html" class="px-4 py-2 rounded-full text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] font-semibold transition duration-300 relative btn-ripple">About Us</a>
-      <a href="products.html" class="px-4 py-2 rounded-full text-white bg-[#F59E0B] text-[#1E3A8A] font-semibold transition duration-300 relative btn-ripple">Products</a>
-      <a href="dealer.html" class="px-4 py-2 rounded-full text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] font-semibold transition duration-300 relative btn-ripple">Dealer Locator</a>
-      <a href="contact.html" class="px-4 py-2 rounded-full text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] font-semibold transition duration-300 relative btn-ripple">Contact</a>
-    </nav>
-    <nav class="md:hidden fixed inset-y-0 right-0 w-3/4 bg-[#1E3A8A] p-6 z-50 nav-slide-in" id="mobileNav">
-      <i class="fas fa-times text-white text-2xl cursor-pointer hover:rotate-90 transition duration-300" onclick="toggleMenu()"></i>
-      <div class="flex flex-col gap-4 mt-6">
-        <a href="index.html" class="px-4 py-2 text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] rounded-full font-semibold transition duration-300">Home</a>
-        <a href="about.html" class="px-4 py-2 text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] rounded-full font-semibold transition duration-300">About Us</a>
-        <a href="products.html" class="px-4 py-2 text-white bg-[#F59E0B] text-[#1E3A8A] rounded-full font-semibold transition duration-300">Products</a>
-        <a href="dealer.html" class="px-4 py-2 text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] rounded-full font-semibold transition duration-300">Dealer Locator</a>
-        <a href="contact.html" class="px-4 py-2 text-white hover:bg-[#F59E0B] hover:text-[#1E3A8A] rounded-full font-semibold transition duration-300">Contact</a>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-wrap" aria-label="Sri Lalitha Aqua Home">
+        <img src="assets/images/logo.png" alt="Sri Lalitha Aqua Logo" class="brand-logo">
+        <div class="brand-text-wrap">
+          <span class="brand-title">Sri Lalitha Aqua</span>
+          <span class="brand-subtitle">Aquaculture Engineering</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="dealer.html" class="nav-link">Dealer Locator</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary">
+          <span>Get a Quote</span>
+          <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i>
+        </a>
       </div>
-    </nav>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="products.html" class="nav-link active">Products</a>
+      <a href="dealer.html" class="nav-link">Dealer Locator</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
   </header>
 
-  <div class="flex min-h-[calc(100vh-200px)]">
-    <aside class="w-64 p-6 bg-gradient-to-br from-[#F3F4F6] to-[#E0F2FE] animate-flow-in">
-      <h3 class="text-lg font-semibold text-[#1E3A8A] mb-6">Categories</h3>
-      <ul class="space-y-2">
-        <li class="py-2 text-[#1E3A8A] hover:text-[#38BDF8] hover:font-semibold cursor-pointer transition duration-300">Premium Aerator</li>
-        <li class="py-2 text-[#1E3A8A] hover:text-[#38BDF8] hover:font-semibold cursor-pointer transition duration-300">Best Quality Aerator</li>
-        <li class="py-2 text-[#1E3A8A] hover:text-[#38BDF8] hover:font-semibold cursor-pointer transition duration-300">Gishnu Gear Box</li>
-        <li class="py-2 text-[#1E3A8A] hover:text-[#38BDF8] hover:font-semibold cursor-pointer transition duration-300">Lalitha Gear Box</li>
-        <li class="py-2 text-[#1E3A8A] hover:text-[#38BDF8] hover:font-semibold cursor-pointer transition duration-300">Lalitha Motor</li>
-        <li class="py-2 text-[#1E3A8A] hover:text-[#38BDF8] hover:font-semibold cursor-pointer transition duration-300">Jagannath Motor</li>
-        <li class="py-2 text-[#1E3A8A] hover:text-[#38BDF8] hover:font-semibold cursor-pointer transition duration-300">2 Peddle Aerator</li>
-      </ul>
-    </aside>
+  <main>
+    
+    <section class="section" style="background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 100%); padding-top: 4rem; padding-bottom: 3rem; text-align: center;">
+      <div class="container">
+        <span class="section-tag">Engineering Catalog</span>
+        <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); margin-bottom: 1rem;">
+          Aquaculture Hardware Suite
+        </h1>
+        <p style="max-width: 680px; margin: 0 auto 2.5rem; font-size: 1.15rem; color: var(--text-secondary);">
+          Precision-machined aerators, continuous-duty electric motors, and high-reduction gearboxes engineered for commercial aquaculture yields.
+        </p>
 
-    <section class="flex-1 p-6">
-      <div class="flex flex-wrap justify-center gap-8">
-        <div class="relative w-80 bg-gradient-to-br from-[#F3F4F6] to-[#E0F2FE] rounded-full p-6 organic-card animate-flow-in" data-product="Premium Aerator" data-code="PA100" style="transform: rotate(-2deg);">
-          <img src="premium-aerator.jpg" alt="Premium Aerator" class="w-full h-56 object-cover rounded-full">
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold text-[#1E3A8A]">Premium Aerator</h3>
-            <p class="text-sm text-gray-700">Code: PA100</p>
-            <button class="inquiry-btn mt-4 px-6 py-3 bg-[#38BDF8] text-white rounded-full font-semibold relative btn-ripple">Add to Inquiry</button>
-          </div>
-        </div>
-        <div class="relative w-80 bg-gradient-to-br from-[#F3F4F6] to-[#E0F2FE] rounded-full p-6 organic-card animate-flow-in" data-product="Best Quality Aerator" data-code="BQA200" style="transform: rotate(2deg) translateY(20px);">
-          <img src="lalitha-motor.jpg" alt="Best Quality Aerator" class="w-full h-56 object-cover rounded-full">
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold text-[#1E3A8A]">Best Quality Aerator</h3>
-            <p class="text-sm text-gray-700">Code: BQA200</p>
-            <button class="inquiry-btn mt-4 px-6 py-3 bg-[#38BDF8] text-white rounded-full font-semibold relative btn-ripple">Add to Inquiry</button>
-          </div>
-        </div>
-        <div class="relative w-80 bg-gradient-to-br from-[#F3F4F6] to-[#E0F2FE] rounded-full p-6 organic-card animate-flow-in" data-product="Gishnu Gear Box" data-code="GGB300" style="transform: rotate(-1deg) translateY(40px);">
-          <img src="gishnu-gear-box.jpg" alt="Gishnu Gear Box" class="w-full h-56 object-cover rounded-full">
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold text-[#1E3A8A]">Gishnu Gear Box</h3>
-            <p class="text-sm text-gray-700">Code: GGB300</p>
-            <button class="inquiry-btn mt-4 px-6 py-3 bg-[#38BDF8] text-white rounded-full font-semibold relative btn-ripple">Add to Inquiry</button>
-          </div>
-        </div>
-        <div class="relative w-80 bg-gradient-to-br from-[#F3F4F6] to-[#E0F2FE] rounded-full p-6 organic-card animate-flow-in" data-product="Lalitha Gear Box" data-code="LGB400" style="transform: rotate(1deg);">
-          <img src="lalitha-gear-box.jpg" alt="Lalitha Gear Box" class="w-full h-56 object-cover rounded-full">
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold text-[#1E3A8A]">Lalitha Gear Box</h3>
-            <p class="text-sm text-gray-700">Code: LGB400</p>
-            <button class="inquiry-btn mt-4 px-6 py-3 bg-[#38BDF8] text-white rounded-full font-semibold relative btn-ripple">Add to Inquiry</button>
-          </div>
-        </div>
-        <div class="relative w-80 bg-gradient-to-br from-[#F3F4F6] to-[#E0F2FE] rounded-full p-6 organic-card animate-flow-in" data-product="Lalitha Motor" data-code="LM500" style="transform: rotate(-2deg) translateY(20px);">
-          <img src="lalitha-motor.jpg" alt="Lalitha Motor" class="w-full h-56 object-cover rounded-full">
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold text-[#1E3A8A]">Lalitha Motor</h3>
-            <p class="text-sm text-gray-700">Code: LM500</p>
-            <button class="inquiry-btn mt-4 px-6 py-3 bg-[#38BDF8] text-white rounded-full font-semibold relative btn-ripple">Add to Inquiry</button>
-          </div>
-        </div>
-        <div class="relative w-80 bg-gradient-to-br from-[#F3F4F6] to-[#E0F2FE] rounded-full p-6 organic-card animate-flow-in" data-product="Jagannath Motor" data-code="JM600" style="transform: rotate(2deg) translateY(40px);">
-          <img src="jagannath-motor.jpg" alt="Jagannath Motor" class="w-full h-56 object-cover rounded-full">
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold text-[#1E3A8A]">Jagannath Motor</h3>
-            <p class="text-sm text-gray-700">Code: JM600</p>
-            <button class="inquiry-btn mt-4 px-6 py-3 bg-[#38BDF8] text-white rounded-full font-semibold relative btn-ripple">Add to Inquiry</button>
-          </div>
-        </div>
-        <div class="relative w-80 bg-gradient-to-br from-[#F3F4F6] to-[#E0F2FE] rounded-full p-6 organic-card animate-flow-in" data-product="2 Peddle Aerator" data-code="TPA700" style="transform: rotate(-1deg);">
-          <img src="2-peddle-aerator.jpg" alt="2 Peddle Aerator" class="w-full h-56 object-cover rounded-full">
-          <div class="p-4 text-center">
-            <h3 class="text-lg font-semibold text-[#1E3A8A]">2 Peddle Aerator</h3>
-            <p class="text-sm text-gray-700">Code: TPA700</p>
-            <button class="inquiry-btn mt-4 px-6 py-3 bg-[#38BDF8] text-white rounded-full font-semibold relative btn-ripple">Add to Inquiry</button>
-          </div>
+        <div style="display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
+          <button class="btn btn-primary category-filter active" data-filter="all" style="border-radius: 999px; padding: 0.55rem 1.25rem;">All Equipment</button>
+          <button class="btn btn-secondary category-filter" data-filter="aerators" style="border-radius: 999px; padding: 0.55rem 1.25rem;">Aerators</button>
+          <button class="btn btn-secondary category-filter" data-filter="motors" style="border-radius: 999px; padding: 0.55rem 1.25rem;">Motors</button>
+          <button class="btn btn-secondary category-filter" data-filter="gearboxes" style="border-radius: 999px; padding: 0.55rem 1.25rem;">Gearboxes &amp; Hubs</button>
         </div>
       </div>
     </section>
-  </div>
 
-  <div class="modal hidden fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center" id="inquiryModal">
-    <div class="bg-gradient-to-br from-[#F3F4F6] to-[#E0F2FE] p-8 rounded-3xl w-11/12 max-w-md transform scale-90 transition duration-500">
-      <i class="fas fa-times absolute top-4 right-4 text-xl cursor-pointer hover:rotate-90 transition duration-300" onclick="closeModal()"></i>
-      <h2 class="text-xl font-semibold text-[#1E3A8A] mb-6">Inquiry Form</h2>
-      <form id="inquiryForm" class="flex flex-col gap-4">
-        <input type="text" id="productName" name="product_name" readonly class="p-3 border-none rounded-full focus:ring-2 focus:ring-[#F59E0B]">
-        <input type="text" id="productCode" name="product_code" readonly class="p-3 border-none rounded-full focus:ring-2 focus:ring-[#F59E0B]">
-        <input type="text" id="name" name="name" placeholder="Your Name" required class="p-3 border-none rounded-full focus:ring-2 focus:ring-[#F59E0B]">
-        <input type="email" id="email" name="user_email" placeholder="Your Email" required class="p-3 border-none rounded-full focus:ring-2 focus:ring-[#F59E0B]">
-        <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" required class="p-3 border-none rounded-full focus:ring-2 focus:ring-[#F59E0B]">
-        <textarea id="message" name="message" placeholder="Your Message" class="p-3 border-none rounded-md resize-y min-h-[100px] focus:ring-2 focus:ring-[#F59E0B]"></textarea>
-        <button type="submit" class="p-3 bg-[#38BDF8] text-white rounded-full font-semibold relative btn-ripple">Submit Inquiry</button>
+    <section class="section">
+      <div class="container">
+        <div class="products-grid" id="productsCatalogGrid">
+
+          <article class="product-card fade-up" data-category="aerators">
+            <div class="product-media">
+              <span class="product-badge-pill">Aerators &bull; PA-100</span>
+              <img src="assets/images/premium-aerator.jpg" alt="Premium Aerator" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Premium Aerator</h3>
+              <p class="product-desc">
+                High-volume paddlewheel design with four anti-splash curve blades for maximum atmospheric gas exchange.
+              </p>
+              <div class="product-specs-list">
+                <span class="spec-tag">2.0 HP Capacity</span>
+                <span class="spec-tag">SS-304 Drive Axle</span>
+                <span class="spec-tag">High DO Saturation</span>
+              </div>
+              <div class="product-card-footer">
+                <span style="font-weight: 700; color: var(--accent-blue); font-size: 0.95rem;">Standard &bull; 4 Blade</span>
+                <button class="btn btn-primary trigger-inquiry-btn" data-product="Premium Aerator (PA-100)" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card fade-up" data-category="aerators">
+            <div class="product-media">
+              <span class="product-badge-pill">Aerators &bull; BQA-200</span>
+              <img src="assets/images/best-quality-aerator.jpg" alt="Best Quality Aerator" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Best Quality Aerator</h3>
+              <p class="product-desc">
+                Reinforced structural frame with high-buoyancy virgin polymer floats for continuous operation in turbulent monsoons.
+              </p>
+              <div class="product-specs-list">
+                <span class="spec-tag">Heavy-Duty Frame</span>
+                <span class="spec-tag">UV-Stabilized HDPE</span>
+                <span class="spec-tag">Saltwater Rated</span>
+              </div>
+              <div class="product-card-footer">
+                <span style="font-weight: 700; color: var(--accent-blue); font-size: 0.95rem;">Commercial Grade</span>
+                <button class="btn btn-primary trigger-inquiry-btn" data-product="Best Quality Aerator (BQA-200)" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card fade-up" data-category="aerators">
+            <div class="product-media">
+              <span class="product-badge-pill">Aerators &bull; 2PA-300</span>
+              <img src="assets/images/2-peddle-aerator.jpg" alt="2-Peddle Aerator" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">2-Peddle Aerator</h3>
+              <p class="product-desc">
+                Compact, highly maneuverable aeration solution engineered specifically for nursery ponds and broodstock containment tanks.
+              </p>
+              <div class="product-specs-list">
+                <span class="spec-tag">1.0 &ndash; 1.5 HP</span>
+                <span class="spec-tag">Nursery Focused</span>
+                <span class="spec-tag">Low Amp Draw</span>
+              </div>
+              <div class="product-card-footer">
+                <span style="font-weight: 700; color: var(--accent-blue); font-size: 0.95rem;">Compact Series</span>
+                <button class="btn btn-primary trigger-inquiry-btn" data-product="2-Peddle Aerator (2PA-300)" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card fade-up" data-category="motors">
+            <div class="product-media">
+              <span class="product-badge-pill">Motors &bull; LM-500</span>
+              <img src="assets/images/lalitha-motor.jpg" alt="Lalitha Motor" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Lalitha Motor</h3>
+              <p class="product-desc">
+                Submersible copper-wound motor designed to handle unpredictable voltage fluctuations without stator failure.
+              </p>
+              <div class="product-specs-list">
+                <span class="spec-tag">Pure Copper Winding</span>
+                <span class="spec-tag">Internal Thermal Cut</span>
+                <span class="spec-tag">IP68 Seal</span>
+              </div>
+              <div class="product-card-footer">
+                <span style="font-weight: 700; color: var(--accent-blue); font-size: 0.95rem;">2.0 HP &bull; 3 Phase</span>
+                <button class="btn btn-primary trigger-inquiry-btn" data-product="Lalitha Motor (LM-500)" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card fade-up" data-category="motors">
+            <div class="product-media">
+              <span class="product-badge-pill">Motors &bull; JM-600</span>
+              <img src="assets/images/jagannath-motor.jpg" alt="Jagannath Motor" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Jagannath Motor</h3>
+              <p class="product-desc">
+                High-starting-torque electric motor engineered for continuous load conditions and long harvest season runs.
+              </p>
+              <div class="product-specs-list">
+                <span class="spec-tag">High Starting Torque</span>
+                <span class="spec-tag">Vibration Damped</span>
+                <span class="spec-tag">Silent Run Rotor</span>
+              </div>
+              <div class="product-card-footer">
+                <span style="font-weight: 700; color: var(--accent-blue); font-size: 0.95rem;">Heavy Duty</span>
+                <button class="btn btn-primary trigger-inquiry-btn" data-product="Jagannath Motor (JM-600)" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card fade-up" data-category="gearboxes">
+            <div class="product-media">
+              <span class="product-badge-pill">Gearboxes &bull; GGB-300</span>
+              <img src="assets/images/gishnu-gear-box.jpg" alt="Gishnu Gear Box" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Gishnu Gear Box</h3>
+              <p class="product-desc">
+                Helical bevel-cut gears cast from alloy steel and bathed in synthetic oil for minimum mechanical drag and zero overheating.
+              </p>
+              <div class="product-specs-list">
+                <span class="spec-tag">14:1 Reduction</span>
+                <span class="spec-tag">Double Oil Seal</span>
+                <span class="spec-tag">Cast Iron Housing</span>
+              </div>
+              <div class="product-card-footer">
+                <span style="font-weight: 700; color: var(--accent-blue); font-size: 0.95rem;">High Torque</span>
+                <button class="btn btn-primary trigger-inquiry-btn" data-product="Gishnu Gear Box (GGB-300)" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card fade-up" data-category="gearboxes">
+            <div class="product-media">
+              <span class="product-badge-pill">Gearboxes &bull; LGB-400</span>
+              <img src="assets/images/lalitha-gear-box.jpg" alt="Lalitha Gear Box" class="product-image" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Lalitha Gear Box</h3>
+              <p class="product-desc">
+                Precision housing geometry preventing shaft deflection under heavy aquatic turbulence and long mechanical duty cycles.
+              </p>
+              <div class="product-specs-list">
+                <span class="spec-tag">Anti-Deflection Axle</span>
+                <span class="spec-tag">Zero Leakage</span>
+                <span class="spec-tag">Sealed Bearings</span>
+              </div>
+              <div class="product-card-footer">
+                <span style="font-weight: 700; color: var(--accent-blue); font-size: 0.95rem;">Factory Calibrated</span>
+                <button class="btn btn-primary trigger-inquiry-btn" data-product="Lalitha Gear Box (LGB-400)" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+                  Inquire
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="inquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close dialog">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div style="margin-bottom: 1.5rem;">
+        <span class="section-tag" style="font-size: 0.75rem; margin-bottom: 0.5rem;">Product Inquiry</span>
+        <h3 id="modalHeading" style="font-size: 1.6rem; color: var(--text-primary);">Request Technical Quote</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">Direct consultation from Bhimavaram engineering team.</p>
+      </div>
+
+      <form data-ajax-form>
+        <div class="form-group">
+          <label class="form-label">Target Equipment</label>
+          <input type="text" class="form-control" id="modalProduct" readonly value="Premium Aerator PA-100">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Full Name / Farm Identity</label>
+          <input type="text" class="form-control" placeholder="e.g. Ramesh Aqua Farms" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Contact Phone / WhatsApp Number</label>
+          <input type="tel" class="form-control" placeholder="+91 95533 33173" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Units or Farm Requirements</label>
+          <textarea class="form-control" rows="3" placeholder="Specify unit quantity, pond volume, or delivery location..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.85rem;">
+          <span>Submit Request</span>
+          <i class="fas fa-paper-plane" style="font-size: 0.85rem;"></i>
+        </button>
       </form>
     </div>
   </div>
 
-  <footer class="bg-gradient-to-r from-[#1E3A8A] to-[#38BDF8] text-white p-8">
-    </div>
-    <div class="text-center mt-6 pt-6 border-t border-white border-opacity-20">
-      <p class="text-sm">© 2025 Sri Lalitha Aqua. All Rights Reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-wrap">
+            <img src="assets/images/logo.png" alt="Sri Lalitha Aqua Emblem" class="brand-logo" style="filter: brightness(1.2);">
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="color: #ffffff;">Sri Lalitha Aqua</span>
+              <span class="brand-subtitle" style="color: var(--accent-blue);">Aquaculture Engineering</span>
+            </div>
+          </div>
+          <p>
+            Delivering modern, robust aquaculture engineering solutions. Trusted across India's aquaculture belt for reliability, power savings, and high-yield aeration.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us &amp; Mission</a></li>
+            <li><a href="products.html">Product Lineup</a></li>
+            <li><a href="dealer.html">Authorized Dealers</a></li>
+            <li><a href="contact.html">Contact &amp; Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Headquarters</h4>
+          <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6; margin-bottom: 0.75rem;">
+            Sri Lalitha Aqua, Near SRKR College,<br>
+            Bhimavaram, Andhra Pradesh, India.
+          </p>
+          <p style="color: #94a3b8; font-size: 0.92rem;">
+            <i class="fas fa-phone" style="color: var(--accent-blue); margin-right: 0.4rem;"></i>
+            +91 95533 33173 / +91 88977 03778
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Certifications</h4>
+          <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6;">
+            100% Tested Submersible Motors &bull; Marine-Grade Alloy Housings &bull; 24/7 Harvest Support.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sri Lalitha Aqua. All Rights Reserved. Innovate. Sustain. Thrive.</p>
+        <p style="color: #64748b;">Precision Water Engineering Systems</p>
+      </div>
     </div>
   </footer>
 
+  <script src="assets/js/script.js"></script>
   <script>
-    (function() {
-      emailjs.init("Eq5B6pSc4pd_GhXMM"); // EmailJS Public Key
-    })();
+    // Category Filter Interactions
+    const filterButtons = document.querySelectorAll('.category-filter');
+    const cards = document.querySelectorAll('#productsCatalogGrid .product-card');
 
-    function toggleMenu() {
-      const nav = document.getElementById('mobileNav');
-      nav.classList.toggle('active');
-      const hamburger = document.querySelector('.fa-bars');
-      hamburger.classList.toggle('fa-times');
-    }
-
-    function handleNewsletter(event) {
-      event.preventDefault();
-      alert('Subscribed to newsletter!');
-    }
-
-    const modal = document.getElementById('inquiryModal');
-    const inquiryButtons = document.querySelectorAll('.inquiry-btn');
-    const inquiryForm = document.getElementById('inquiryForm');
-
-    inquiryButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const card = button.closest('.organic-card');
-        const productName = card.getAttribute('data-product');
-        const productCode = card.getAttribute('data-code');
-        document.getElementById('productName').value = productName;
-        document.getElementById('productCode').value = productCode;
-        modal.classList.remove('hidden');
-        setTimeout(() => modal.querySelector('div').classList.add('scale-100'), 10);
-      });
-    });
-
-    function closeModal() {
-      modal.querySelector('div').classList.remove('scale-100');
-      setTimeout(() => modal.classList.add('hidden'), 500);
-    }
-
-    inquiryForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      // Get current time in IST (Indian Standard Time)
-      const now = new Date();
-      const istTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
-      const timeString = istTime.toLocaleString('en-US', {
-        hour: 'numeric',
-        minute: 'numeric',
-        hour12: true,
-        day: 'numeric',
-        month: 'short',
-        year: 'numeric'
-      });
-
-      // Get form data
-      const formData = {
-        product_name: document.getElementById('productName').value || 'Unknown Product',
-        product_code: document.getElementById('productCode').value || 'Unknown Code',
-        name: document.getElementById('name').value || 'Anonymous',
-        user_email: document.getElementById('email').value,
-        reply_to: document.getElementById('email').value, // Set reply-to to user's email
-        mobile: document.getElementById('mobile').value || 'Not Provided',
-        message: document.getElementById('message').value || 'No message provided',
-        time: timeString
-      };
-
-      // Log form data for debugging
-      console.log('Sending form data:', formData);
-
-      // Send email using EmailJS to info@srilalithaaqua.com (set in template)
-      emailjs.send('service_gbcchnn', 'template_oedfvs6', formData)
-        .then((response) => {
-          console.log('SUCCESS!', response.status, response.text);
-          alert('Inquiry sent successfully!');
-          closeModal();
-          inquiryForm.reset();
-        }, (error) => {
-          console.error('FAILED...', error);
-          alert('Failed to send inquiry. Please try again.');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('btn-primary', 'active');
+          b.classList.add('btn-secondary');
         });
-    });
+        btn.classList.add('btn-primary', 'active');
+        btn.classList.remove('btn-secondary');
 
-    window.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-flow-in');
-        }
+        const cat = btn.getAttribute('data-filter');
+        cards.forEach(card => {
+          if (cat === 'all' || card.getAttribute('data-category') === cat) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
       });
-    }, { threshold: 0.2 });
-
-    document.querySelectorAll('.organic-card').forEach(card => observer.observe(card));
+    });
   </script>
 </body>
 </html>
